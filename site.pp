@@ -3,7 +3,7 @@
 class showmessage {
 		file {'/usr/local/sbin/message.sh':
 		owner => root, group => root, mode => 0755,
-		content => "echo 'SUP MOTHER FUCKER!!!!!!!!!!!!bitchm' >> new.txt",
+		content => "echo 'SUP MOTHER FUCKER!!bitch' >> new.txt",
 		}
 }
 
