@@ -8,6 +8,14 @@ class showmessage {
 }
 
 
+class showmessagees {
+		file {'/usr/local/sbin/messagees.sh':
+		owner => root, group => root, mode => 0755,
+		content => "echo 'SUP MOTHER FUCKER!!bitch' >> new.txt",
+		}
+}
+
+
 
 class toolbox {
 	
@@ -17,12 +25,13 @@ class toolbox {
 
 	    }
 exec {"puppet_simple":
-command => '/bin/sh -c "/usr/local/sbin/message.sh"';}
+command => '/bin/sh -c "/usr/local/sbin/puppetsimple.sh"';}
 
 }
 
 node 'ubuntu.imqs.local' {
 	include showmessage
+	include showmessagees
 	include toolbox
 
 }
