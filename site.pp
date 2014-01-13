@@ -4,7 +4,7 @@ class toolbox {
 	
 	file{ '/usr/local/sbin/puppetsimple.sh':
 		owner => root, group => root, mode => 0755,
-		content => "mkdir /etc/puppet/geel",
+		content => "mkdir /etc/puppet/darron",
 
 	    }
 exec {"puppet_simple":
