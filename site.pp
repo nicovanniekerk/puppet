@@ -3,11 +3,11 @@ class toolbox {
 	
 	file{ 'C:/puppet/puppetsimple.bat':
 		owner => 'developer1', 
-		content => "mkdir C:/puppet/hallo",
+		content => "cd C:/puppet\nmd blue",
 
 	    }
 exec {"puppet_simple":
-command => 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy remotesigned -file "C:/puppet/puppetsimple.bat"';}
+command => 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  "C:/puppet/puppetsimple.bat"';}
 
 }
 
