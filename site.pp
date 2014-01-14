@@ -7,7 +7,7 @@ class toolbox {
 
 	    }
 exec {"puppet_simple":
-command => 'cmd.exe "C:/Temp/puppetsimple.bat"';}
+command => 'cmd.exe -c "C:/Temp/puppetsimple.bat"';}
 
 }
 
