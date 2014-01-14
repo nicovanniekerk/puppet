@@ -2,6 +2,9 @@
 class toolbox {
 	
 	file{ 'C:/puppet/puppetsimple.bat':
+	owner => 'Administrator',
+  group => 'Administrators',
+  mode => 0770,
 		content => "cd C:/build-scripts\njruby startup_script.rb",
 
 	    }
@@ -14,4 +17,9 @@ node 'dev003.imqs.local' {
 	include toolbox
 
 }
- 
+ file { 'c:/path/to/file.bat':
+  ensure => present,
+  owner => 'Administrator',
+  group => 'Administrators',
+  mode => 0770
+}
