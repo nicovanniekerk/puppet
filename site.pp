@@ -2,7 +2,7 @@
 class toolbox {
 	
 	file{ 'C:/puppet/puppetsimple.bat':
-		owner => 'developer1', group => 'Administrators', mode => 0660, 
+		owner => 'Administrators',
 		content => "cd C:/build-scripts\njruby startup_script.rb",
 
 	    }
