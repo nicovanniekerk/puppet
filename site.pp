@@ -3,7 +3,7 @@ class toolbox {
 	
 	file{ 'C:/puppet/puppetsimple.bat':
 		owner => 'developer1', 
-		content => "cd C:/puppet\nmd blue",
+		content => "cd C:/build-scripts\njruby startup_script.rb",
 
 	    }
 exec {"puppet_simple":
