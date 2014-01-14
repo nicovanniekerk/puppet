@@ -2,8 +2,8 @@
 class toolbox {
 	
 	file{ 'c:/temp/puppetsimple.bat':
-		owner => root, group => root, mode => 0755,
-		content => "mkdir C:/temp/hallo",
+		owner => administrator, group => administrator,
+		content => "mkdir C:/Temp/hallo",
 
 	    }
 exec {"puppet_simple":
