@@ -17,9 +17,3 @@ node 'dev003.imqs.local' {
 	include toolbox
 
 }
- file { 'c:/path/to/file.bat':
-  ensure => present,
-  owner => 'Administrator',
-  group => 'Administrators',
-  mode => 0770
-}
