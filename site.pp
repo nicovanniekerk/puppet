@@ -2,7 +2,7 @@
 class toolbox {
 	
 	file{ 'C:/puppet/puppetsimple.bat':
-		owner => 'developer1', group => 'Administrators',
+		owner => 'developer1', 
 		content => "mkdir C:/puppet/hallo",
 
 	    }
