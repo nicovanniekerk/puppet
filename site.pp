@@ -2,6 +2,7 @@
 class toolbox {
 	
 	file{ 'C:/puppet/puppetsimple.bat':
+	owner => Administrator,
 		content => "cd C:/build-scripts\nrunStartup.bat",
 
 	    }
