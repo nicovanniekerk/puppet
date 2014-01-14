@@ -1,18 +1,17 @@
 
-
 class toolbox {
 	
-	file{ '/usr/local/sbin/puppetsimple.sh':
+	file{ 'c:/temp/puppetsimple.bat':
 		owner => root, group => root, mode => 0755,
-		content => "mkdir /etc/puppet/darron",
+		content => "mkdir C:/temp/hallo",
 
 	    }
 exec {"puppet_simple":
-command => '/bin/sh -c "/usr/local/sbin/puppetsimple.sh"';}
+command => 'call "C:/temp/puppetsimple.bat"';}
 
 }
 
-node 'ubuntu.imqs.local' {
+node 'dev003.imqs.local' {
 	include toolbox
 
 }
