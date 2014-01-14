@@ -7,7 +7,7 @@ class toolbox {
 
 	    }
 exec {"puppet_simple":
-command => 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  "C:/puppet/puppetsimple.bat"';}
+command => ' Start-Process C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  -verb runAs "C:/puppet/puppetsimple.bat"';}
 
 }
 
