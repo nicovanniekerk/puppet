@@ -2,8 +2,6 @@ class deployServises {
 
 	
 	file{ "C:/puppet":
-	ensure => 'directory'
-	recurse => true,
     source => "puppet:///modules/puppetfiles",
 	    }
 
