@@ -5,7 +5,7 @@ class deployServises {
 	cwd =>  'C:/build-scripts',
 	logoutput => true,
 	path => $::path,
-	refreshonly => true
+	refreshonly => true,
 	subscribe => File['C:/puppet/services/web-services-1.0.1-SNAPSHOT.zip'],
 	}
 		
