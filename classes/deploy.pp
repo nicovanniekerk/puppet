@@ -1,13 +1,12 @@
 class deployServises {
-
-	file { 'C:/puppet/start.bat':
-		ensure => 'exists',
-		source => 'C:/hallo.txt'
-	}
-
 		
+	exec { 'switch':
+	command => 'cmd "cd C:/build-scripts"',
+	path => $::path
+	}
+	
 	exec { 'run_deploy':
-	command => 'cmd "start.bat"',
+	command => 'cmd "cd runStartup.bat"',
 	path => $::path
 	}
 }
