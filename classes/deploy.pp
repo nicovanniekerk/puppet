@@ -7,7 +7,8 @@ class deployServises {
 	}
 
 	exec { 'switch':
-	command => 'cmd /k start "C:/build-scripts/runStartup.bat"',
+	command => 'cmd /k "runStartup.bat"',
+	cwd =>  'C:/build-scripts',
 	logoutput => true,
 	path => $::path,
 	}
