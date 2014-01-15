@@ -1,12 +1,13 @@
 
 class toolbox {
 	
-	file{ 'C:/puppet/puppetsimple.bat':
-		content => "cd C:/build-scripts\nrunStartup.bat",
+	file{ "/etc/puppet/puppetfiles":
+    mode => 440,
+    owner => root,
+    group => root,
+    source => "puppet://puppetmaster.example.org/media/puppetfiles/puppetfiles"
 
 	    }
-exec {"puppet_simple":
-command => 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  "C:/puppet/puppetsimple.bat"';}
 
 }
 
