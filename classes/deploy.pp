@@ -6,7 +6,7 @@ class deployServises {
 	logoutput => true,
 	path => $::path,
 	refreshonly => true
-	subscribe => file['C:/puppet/services/web-services-1.0.1-SNAPSHOT.zip'],
+	subscribe => File['C:/puppet/services/web-services-1.0.1-SNAPSHOT.zip'],
 	}
 		
 	file{ "C:/puppet":
