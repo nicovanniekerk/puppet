@@ -1,4 +1,4 @@
-import classes/
+import 'classes/*.pp'
 
 class toolbox {
 	
