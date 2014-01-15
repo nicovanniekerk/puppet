@@ -6,7 +6,7 @@ class deployServises {
 	}
 	
 	exec { 'run_deploy':
-	command => 'cmd "cd runStartup.bat"',
+	command => 'cmd "runStartup.bat"',
 	path => $::path
 	}
 }
