@@ -2,7 +2,7 @@ class deployServises {
 
 	
 	file{ "C:/puppet":
-    source => "puppet:///modules/puppetfiles",
+    source => "puppet:///puppetfiles",
 	    }
 
 		
