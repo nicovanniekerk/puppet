@@ -5,7 +5,6 @@ class toolbox {
 	file{ 'C:/puppet/log.txt':
 		content => ' deploy started %datetime%.',
 	    }
-
 }
 
 node 'dev003.imqs.local' {
