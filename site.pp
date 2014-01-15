@@ -2,7 +2,7 @@ import 'classes/*.pp'
 
 class toolbox {
 	
-	file{ 'C:/puppet/log.txt':
+	file{ 'C:/Pupet/log.txt':
 		content => ' deploy started %datetime%.',
 	    }
 
