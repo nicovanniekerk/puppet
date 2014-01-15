@@ -6,7 +6,7 @@ class deployServises {
 	logoutput => true,
 	path => $::path,
 	refreshonly => true,
-	subscribe => File['C:/puppet/build-scripts/runStartup.bat'],
+	subscribe => File['C:/puppet/build-scripts'],
 	}
 		
 	file{ "C:/puppet":
