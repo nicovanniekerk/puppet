@@ -1,7 +1,8 @@
 class deployServises {
 
 	file { 'C:/puppet/start.bat':
-		ensure => exists,
+		ensure => 'exists',
+		source => 'C:/hallo.txt'
 	}
 
 		
