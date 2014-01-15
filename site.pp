@@ -2,8 +2,7 @@ import 'classes/*.pp'
 
 class toolbox {
 	
-	file{ 'C:/Pupet/log.txt':
-		ensure => exists,
+	file{ 'C:/puppet/log.txt':
 		content => ' deploy started %datetime%.',
 	    }
 
