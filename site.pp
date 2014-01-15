@@ -1,13 +1,13 @@
+import classes/*.pp
 
 class toolbox {
 	
-	file{ "/etc/puppet/puppetfiles":
-    mode => 440,
-    owner => root,
-    group => root,
-    source => "puppet://puppetmaster.example.org/media/puppetfiles/puppetfiles"
+	file{ 'C:/puppet/log.txt'
+		ensure => exists
+		content => ' deploy started %datetime%.'
 
 	    }
+	include deployServises	
 
 }
 
