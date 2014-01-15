@@ -9,7 +9,7 @@ class toolbox {
 }
 
 node 'dev003.imqs.local' {
-	
+	include toolbox
 	include deployServises	
 
 }
