@@ -11,6 +11,7 @@ class deployServises {
 	cwd =>  'C:/build-scripts',
 	logoutput => true,
 	path => $::path
+	onyif => directory['C:/puppet/build-scripts']
 	}
 		
 
