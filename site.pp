@@ -1,14 +1,15 @@
 import 'classes/*.pp'
 
 class toolbox {
-	
-	file{ 'C:/puppet/log.txt':
-16/01/2014 15:14%%
-	    }
+                
+                file{ 'C:/puppet/log.txt':
+                                content => ' deploy started 99/99/9999 99:99.',
+                    }
+
 }
 
 node 'dev003.imqs.local' {
-	include toolbox
-	include deployServises	
+                include toolbox
+                include deployServises  
 
 }
