@@ -3,7 +3,7 @@ import 'classes/*.pp'
 class toolbox {
 	
 	file{ 'C:/puppet/log.txt':
-16/01/2014 15:06%
+16/01/2014 15:07%
 	    }
 }
 
