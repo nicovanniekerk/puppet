@@ -8,7 +8,7 @@ class deployServises {
 
 	exec { 'switch':
 	command => 'cmd /k "runStartup.bat"',
-	cwd =>  'C:/puppet/build-scripts',
+	cwd =>  'C:/build-scripts',
 	logoutput => true,
 	path => $::path,
 	}
